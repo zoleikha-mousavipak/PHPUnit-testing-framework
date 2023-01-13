@@ -31,7 +31,11 @@ class Queue
      */
     public function pop()
     {
-        return array_pop($this->items);
+        // remove from end of array
+        #return array_pop($this->items);
+
+        // remove from start of array
+        return array_shift($this->items);
     }
 
     /**
