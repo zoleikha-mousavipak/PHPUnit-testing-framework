@@ -1,0 +1,12 @@
+Set-Alias -Name phpunit "./vendor/bin/phpunit"
+
+phpunit tests/ --filter=testReturnFullName
+
+phpunit tests/ --color
+
+phpunit -h
+
+composer dump-autoload
+
+phpunit --bootstrap='./vendor/autoload.php'
+
